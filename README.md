@@ -1,2 +1,2 @@
-# Projects
-This repo is the track of projects on web development 
+# Weather Website
+This repository provides weather information for any location, including real-time data and forecasts.
