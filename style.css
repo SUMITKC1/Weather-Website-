@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Weather App Container */
+.weather-app {
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  height: 70%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Main Section */
+.main {
+  flex: 3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  transition: background 0.5s ease-in-out;
+}
+
+.main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay for text visibility */
+  z-index: 1;
+}
+
+/* Weather Info */
+.weather-info {
+  z-index: 2;
+  color: black; /* Default for day */
+  transition: color 0.5s ease-in-out;
+}
+
+.temperature {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.city {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.date, .condition {
+  font-size: 18px;
+}
+
+/* Sidebar Section */
+.sidebar {
+  flex: 2;
+  background-color: rgba(255, 255, 255, 0.8); /* Default for day */
+  color: black; /* Default for day */
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.recent-locations {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-locations li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Weather Details */
+.weather-details {
+  font-size: 16px;
+  color: black; /* Default for day */
+  transition: color 0.5s ease-in-out;
+}
+
+.weather-details p {
+  margin: 5px 0;
+}
+
+
+
